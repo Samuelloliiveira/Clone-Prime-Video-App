@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native'
 
+export const VIDEO_HEIGHT = 180
+
 export const styles = StyleSheet.create({
   safeAreaView: {
     flex: 1,
@@ -24,7 +26,7 @@ export const styles = StyleSheet.create({
   },
   cover: {
     width: 328,
-    height: 134,
+    height: VIDEO_HEIGHT,
     borderRadius: 10,
     opacity: 0.5,
   },

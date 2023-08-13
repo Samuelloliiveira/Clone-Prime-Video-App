@@ -2,7 +2,7 @@ export declare global {
   namespace ReactNavigation {
     interface RootParamList {
       detailsMovie: {
-        id: number
+        videoId: string
         movieTitle: string
         URL: string
       }
