@@ -4,12 +4,13 @@ import { MaterialIcons } from '@expo/vector-icons'
 import { Home } from '../screens/Home'
 import { Downloads } from '../screens/Downloads'
 import { MyPrime } from '../screens/MyPrime'
+import { DetailsMovie } from '../screens/DetailsMovie'
 
-const Tab = createBottomTabNavigator()
+const { Navigator, Screen } = createBottomTabNavigator()
 
-export function TabRoutes() {
+export function AppRoutes() {
   return (
-    <Tab.Navigator
+    <Navigator
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
@@ -23,7 +24,7 @@ export function TabRoutes() {
         tabBarInactiveTintColor: "#AFBBC6",
       }}
     >
-      <Tab.Screen
+      <Screen
         name="home"
         component={Home}
         options={{
@@ -34,7 +35,7 @@ export function TabRoutes() {
           },
         }}
       />
-      <Tab.Screen
+      <Screen
         name="downloads"
         component={Downloads}
         options={{
@@ -45,7 +46,7 @@ export function TabRoutes() {
           }
         }}
       />
-      <Tab.Screen
+      <Screen
         name="myprime"
         component={MyPrime}
         options={{
@@ -56,7 +57,13 @@ export function TabRoutes() {
           }
         }}
       />
-    </Tab.Navigator>
-
+      <Screen
+        name="detailsMovie"
+        component={DetailsMovie}
+        options={{
+          tabBarButton: () => null,
+        }}
+      />
+    </Navigator>
   )
 }

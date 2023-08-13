@@ -87,19 +87,19 @@ export const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
   },
-  movieContainer: {
+  movieButton: {
     position: 'relative',
+    marginRight: 15
   },
   movie: {
     width: 114.88,
     height: 154.45,
-    marginRight: 15,
     borderRadius: 10
   },
-  playIcon: {
-    position: 'absolute',
-    top: '30%',
-    left: '25%',
+  playIconContainer: {
+    ...StyleSheet.absoluteFillObject,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   amazonOriginals: {
     marginTop: 10,

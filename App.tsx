@@ -1,6 +1,5 @@
 import { StatusBar } from 'react-native'
 import { useFonts, Inter_400Regular, Inter_500Medium, Inter_600SemiBold } from '@expo-google-fonts/inter'
-import { Home } from './src/screens/Home'
 import { Routes } from './src/routes'
 
 
