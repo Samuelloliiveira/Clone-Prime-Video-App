@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 
+export const SCREEN_SPACE = 20
 export const VIDEO_HEIGHT = 180
 
 export const styles = StyleSheet.create({
@@ -14,18 +15,18 @@ export const styles = StyleSheet.create({
   navigation: {
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingLeft: 20,
-    paddingRight: 20,
+    paddingLeft: SCREEN_SPACE,
+    paddingRight : SCREEN_SPACE,
     paddingBottom: 20,
     backgroundColor: "#0D1821"
   },
   movieDetails: {
-    paddingLeft: 20,
-    paddingRight: 20,
+    paddingLeft: SCREEN_SPACE,
+    paddingRight : SCREEN_SPACE,
     gap: 10
   },
   cover: {
-    width: 328,
+    width: "100%",
     height: VIDEO_HEIGHT,
     borderRadius: 10,
     opacity: 0.5,
@@ -64,6 +65,7 @@ export const styles = StyleSheet.create({
   recommendation: {
     marginLeft: 20,
     marginRight: 20,
+    paddingBottom: 20,
   },
   sectionTitle: {
     color: "#fff",

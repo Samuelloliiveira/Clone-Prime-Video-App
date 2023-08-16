@@ -104,6 +104,7 @@ export const styles = StyleSheet.create({
   amazonOriginals: {
     marginTop: 10,
     paddingLeft: 20,
-    paddingRight: 20
+    paddingRight: 20,
+    paddingBottom: 20,
   }
 })

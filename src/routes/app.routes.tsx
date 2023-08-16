@@ -15,7 +15,7 @@ export function AppRoutes() {
         headerShown: false,
         tabBarStyle: {
           backgroundColor: '#2D3743',
-          height: 70,
+          height: 60,
           borderTopWidth: 0,
           paddingTop: 8,
           paddingBottom: 8
@@ -28,7 +28,7 @@ export function AppRoutes() {
         name="home"
         component={Home}
         options={{
-          tabBarIcon: ({ color }) => <MaterialIcons name="home" size={30} color={color} />,
+          tabBarIcon: ({ color }) => <MaterialIcons name="home" size={25} color={color} />,
           tabBarLabel: "Início",
           tabBarLabelStyle: {
             fontSize: 13
@@ -39,7 +39,7 @@ export function AppRoutes() {
         name="downloads"
         component={Downloads}
         options={{
-          tabBarIcon: ({ color }) => <MaterialIcons name="file-download" size={30} color={color} />,
+          tabBarIcon: ({ color }) => <MaterialIcons name="file-download" size={25} color={color} />,
           tabBarLabel: "Downloads",
           tabBarLabelStyle: {
             fontSize: 13
@@ -50,7 +50,7 @@ export function AppRoutes() {
         name="myprime"
         component={MyPrime}
         options={{
-          tabBarIcon: ({ color }) => <MaterialIcons name="play-arrow" size={30} color={color} />,
+          tabBarIcon: ({ color }) => <MaterialIcons name="play-arrow" size={25} color={color} />,
           tabBarLabel: "Meu prime",
           tabBarLabelStyle: {
             fontSize: 13

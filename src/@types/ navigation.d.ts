@@ -4,7 +4,8 @@ export declare global {
       detailsMovie: {
         videoId: string
         movieTitle: string
-        URL: string
+        URL: string,
+        coverVideo: string
       }
     }
   }
